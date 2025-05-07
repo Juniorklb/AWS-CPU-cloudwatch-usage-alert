@@ -66,8 +66,10 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
     - Name: HighCPUUsageAlert
 
     - (Optional) Display name: CPUAlert
- ![image alt]()
 - Click Create topic
+  
+![image alt](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/2434d33a3e419f0b7351dbf50a13f347366a4704/image/SNNS.PNG)
+
 ### Create an Email Subscription:
 - Inside your new topic ``(HighCPUUsageAlert)``, click “Create subscription”
 - Set:
