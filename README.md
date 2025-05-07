@@ -41,6 +41,9 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 | **Storage**              | Default 8 GiB                   |
 | **Tags**                 | (Optional) Name, Project tag    |
 
+#### Launch the instance:
+- Click Launch Instance and wait until its State = running.
+
 ### 2. Create SNS Topic
 - Go to **Amazon SNS > Topics** and create a topic named `HighCPUUsageAlert`.
 - Create a subscription to your email and confirm it.
