@@ -7,7 +7,7 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 
 ---
 
-## 🚀 Project Objectives
+## Project Objectives
 
 - Monitor EC2 instance CPU utilization using Amazon CloudWatch.
 - Trigger an alert when CPU usage exceeds a threshold (e.g., 80%).
