@@ -85,7 +85,7 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 
 - ⚠️ You must confirm this email for the alerts to work!
   
- ![image alt](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/a6d533a9c1a667080f5f3568a4aa1b9326c3f831/image/IMG_6838.jpeg) 
+ ![image alt  width="400" ](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/a6d533a9c1a667080f5f3568a4aa1b9326c3f831/image/IMG_6838.jpeg) 
  
 ### 3. Create a CloudWatch Alarm
 - Go to **CloudWatch > Alarms > Create Alarm**.
