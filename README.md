@@ -1,7 +1,7 @@
 
 # 📊 AWS CloudWatch CPU Usage Alert Project
 ![AWS](https://img.shields.io/badge/Built%20with-AWS-orange?style=flat&logo=amazonaws)
-![Project Status](https://img.shields.io/badge/status-in--progress-yellow)
+![Project Status](https://img.shields.io/badge/status-finished-green)
 
 This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and trigger an alert using Amazon CloudWatch and Amazon SNS. It's ideal for learning AWS monitoring, automation, and alerting best practices.
 
@@ -168,3 +168,10 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 We have successfully created a CloudWatch CPU usage alert in AWS. We learned how to configure an SNS topic for notifications, set threshold metrics, and verify alarms both through the console and the CLI. We also covered key troubleshooting tips to ensure the alert functions correctly. By following these steps, we have taken an important step toward proactive and cost-effective monitoring of our AWS infrastructure.
 
 - Project created as part of my AWS monitoring practice portfolio.
+
+## 📚 Author
+![AWS](https://img.shields.io/badge/Built%20with-AWS-orange?style=flat&logo=amazonaws) by Junior Kalomba
+**🔗 Feel free to contribute or suggest improvements!** 
+<p align="right">
+  <a href="https://www.linkedin.com/in/junior-kalomba-10002a18a/" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="junior-kalomba-10002a18a" height="30" width="40"/>  
