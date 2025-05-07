@@ -76,7 +76,15 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
    - Protocol: ``Email``
    - Endpoint: Your email address (where you want to receive alerts)
 - Click Create subscription
-- 
+
+## 📩 Confirm Your Subscription:
+
+- Go to your inbox and confirm the SNS subscription by clicking the link in the confirmation email titled:
+
+    `` "AWS Notification - Subscription Confirmation"``
+
+- ⚠️ You must confirm this email for the alerts to work!
+  
 ### 3. Create a CloudWatch Alarm
 - Go to **CloudWatch > Alarms > Create Alarm**.
 - Select metric: **EC2 > Per-Instance Metrics > CPUUtilization**.
