@@ -29,7 +29,9 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 - Go to the AWS Console:
 - Navigate to EC2 from the AWS Management Console.
 -  Click “Launch Instance” and configure as follows:
-- 
+  
+  ![image alt](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/48aec178d0986b93e5d9f3d242cbef4571d45aca/image/EC2.PNG)
+
 | Setting                  | Value                           |
 |--------------------------|---------------------------------|
 | **Name**                 | `MonitoringTestInstance`        |
