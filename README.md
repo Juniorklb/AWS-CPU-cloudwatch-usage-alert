@@ -132,7 +132,7 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 - Description (optional): Alert when CPU exceeds 80% for 5 minutes
 
 - Click Next, then Create Alarm.
-  
+ ![image alt](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/631d03d5662e6e3c5efc003791fa4d8be14a34c0/image/metriccc.PNG) 
 ### 4. Simulate High CPU Usage (Optional)
 SSH into your instance and run:
      
