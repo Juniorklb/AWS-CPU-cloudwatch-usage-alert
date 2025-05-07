@@ -23,21 +23,23 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 - **Amazon SNS (Simple Notification Service)** – Sends email notifications.
 - **AWS Console / AWS CLI / Terraform** – Configuration and management.
 
----
-
-## 🧭 Architecture Overview
-
-
-
-
----
-
 ## 📋 Step-by-Step Implementation
-
-### 1. Launch EC2 Instance
-- Launch a new Amazon EC2 instance (Amazon Linux 2 recommended).
-- Allow SSH access.
-- (Optional) Enable detailed monitoring for 1-minute metrics.
+  
+### Step 1: Launch an EC2 Instance    
+- Go to the AWS Console:
+- Navigate to EC2 from the AWS Management Console.
+-  Click “Launch Instance” and configure as follows:
+- 
+| Setting                  | Value                           |
+|--------------------------|---------------------------------|
+| **Name**                 | `MonitoringTestInstance`        |
+| **AMI**                  | Amazon Linux 2 or Ubuntu 20.04  |
+| **Instance Type**        | `t2.micro` (Free Tier eligible) |
+| **Key Pair**             | Create or choose an existing one |
+| **Network Settings**     | Allow SSH (port 22)             |
+| **Monitoring**           | Enable detailed monitoring (optional) |
+| **Storage**              | Default 8 GiB                   |
+| **Tags**                 | (Optional) Name, Project tag    |
 
 ### 2. Create SNS Topic
 - Go to **Amazon SNS > Topics** and create a topic named `HighCPUUsageAlert`.
@@ -58,6 +60,7 @@ SSH into your instance and run:
     bash
     sudo yum install -y stress
     stress --cpu 2 --timeout 300
+
 ## Conclusion
 
 We have successfully created a CloudWatch CPU usage alert in AWS. We learned how to configure an SNS topic for notifications, set threshold metrics, and verify alarms both through the console and the CLI. We also covered key troubleshooting tips to ensure the alert functions correctly. By following these steps, we have taken an important step toward proactive and cost-effective monitoring of our AWS infrastructure.
