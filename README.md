@@ -95,7 +95,44 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 - Click “Create Alarm”
 - Click “Select Metric”
 - Click “Select Metric”
+#### Choose Metric:
+- In the metric browser, choose:
 
+    - Browse > EC2 > Per-Instance Metrics > CPUUtilization
+
+- Select the checkbox next to your EC2 instance’s CPUUtilization
+
+#### Configure Metric:
+  
+- Set the following:
+  
+| Field                   | Value               |
+|-------------------------|---------------------|
+| **Period**              | `5 minutes`         |
+| **Statistic**           | `Average`           |
+| **Threshold type**      | `Static`            |
+| **Condition**           | `Greater than 80`   |
+| **Datapoints to alarm** | `1 out of 1` (or 2/3 for more stability) |
+
+- Click Next.  
+#### Configure Actions:
+- Under Alarm state trigger, select:
+
+   - In alarm
+
+- Choose Send a notification to an SNS topic
+
+- Select your topic:``HighCPUUsageAlert``
+
+- Click Next.
+  
+ ####  Add Alarm Name and Description:
+- Alarm name: ``HighCPUUsageAlarm``
+
+- Description (optional): Alert when CPU exceeds 80% for 5 minutes
+
+- Click Next, then Create Alarm.
+  
 ### 4. Simulate High CPU Usage (Optional)
 SSH into your instance and run:
      
