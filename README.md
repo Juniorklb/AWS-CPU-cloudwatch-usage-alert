@@ -132,13 +132,36 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 - Description (optional): Alert when CPU exceeds 80% for 5 minutes
 
 - Click Next, then Create Alarm.
- ![image alt](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/631d03d5662e6e3c5efc003791fa4d8be14a34c0/image/metriccc.PNG) 
-### 4. Simulate High CPU Usage (Optional)
-SSH into your instance and run:
-     
-    bash
-    sudo yum install -y stress
-    stress --cpu 2 --timeout 300
+ ![image alt](https://github.com/Juniorklb/AWS-CPU-cloudwatch-usage-alert/blob/631d03d5662e6e3c5efc003791fa4d8be14a34c0/image/metriccc.PNG)
+
+### Step 4: Simulate High CPU Usage on EC2
+- Step 1: SSH into your EC2 Instance
+- Use your terminal:
+ `` ssh -i your-key.pem ec2-user@<your-ec2-public-ip>``
+- For Ubuntu instances, use ``ubuntu@`` instead of ``ec2-user@.``
+- Step 2: Install stress tool
+- For Amazon Linux 2:
+`` sudo yum install -y stress``
+- For Ubuntu:
+``sudo apt update``
+``sudo apt install -y stress``
+- Step 3: Run the Stress Test
+ `` stress --cpu 2 --timeout 300``
+- This will max out 2 CPU cores for 5 minutes.
+  
+##  Step 4: Monitor Alarm in CloudWatch
+
+- Go to CloudWatch > Alarms
+
+- Watch the ``HighCPUUsageAlarm``
+
+- Within 5–10 minutes, the status should change from OK → ALARM
+
+##  Step 5: Check Your Email
+
+- You should receive an email alert from SNS when the alarm triggers.
+
+
 
 ## Conclusion
 
