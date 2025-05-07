@@ -46,10 +46,35 @@ This project demonstrates how to monitor an Amazon EC2 instance's CPU usage and 
 #### Launch the instance:
 - Click Launch Instance and wait until its State = running.
 
-### 2. Create SNS Topic
-- Go to **Amazon SNS > Topics** and create a topic named `HighCPUUsageAlert`.
-- Create a subscription to your email and confirm it.
+#### 💻 Connect to Your Instance
+- Once it’s running, click Connect, and follow the SSH instructions:
 
+ `` ssh -i your-key.pem ec2-user@your-ec2-public-ip``
+
+## 2. Create SNS Topic
+### Step 2: Create an SNS Topic (Email Notification)
+- Go to the AWS Console:
+- Open the SNS (Simple Notification Service) dashboard from the AWS console.
+
+- Create a Topic:
+- Click “Topics” > “Create topic”
+
+- Choose Standard as the type.
+
+- Set the following:
+
+    - Name: HighCPUUsageAlert
+
+    - (Optional) Display name: CPUAlert
+ ![image alt]()
+- Click Create topic
+### Create an Email Subscription:
+- Inside your new topic ``(HighCPUUsageAlert)``, click “Create subscription”
+- Set:
+   - Protocol: ``Email``
+   - Endpoint: Your email address (where you want to receive alerts)
+- Click Create subscription
+- 
 ### 3. Create a CloudWatch Alarm
 - Go to **CloudWatch > Alarms > Create Alarm**.
 - Select metric: **EC2 > Per-Instance Metrics > CPUUtilization**.
